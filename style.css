@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    background-color: lightblue;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+}
+.left .logo{
+    display: flex;
+    height: 80px;
+    width: 170px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+    /* background-color: orange; */
+}
+.left .logo img{
+  height: 50px;
+  width: 50px;
+}
+.left .logo h1{
+    margin-bottom: 10px;
+   font-size: 20px;
+   font-weight: 600;
+   font-family: gilroy;
+  }
+.right{
+    height: 100%;
+    background-image: url(/teams.webp);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    background-color: rgb(232, 149, 177);
+}
+nav{
+    position: relative;
+    left: -100px;
+    height: 90px;
+    top: 20px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    border-radius: 50px;
+    background-color: white;
+}
+nav h2{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+nav h2 i{
+    /* background-color: red; */
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+nav button{
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.text{
+    position: relative;
+    top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    height: 550px;
+    width: 100%;
+    gap: 20px;
+    /* background-color: red; */
+}
+.text h1{
+    width: 65%;
+    font-weight: 800;
+    font-family: sans-serif;
+    line-height: 3vw;
+    font-size: 3vw;
+    color: rgb(48, 218, 223);
+}
+.text p{
+    width: 60%;
+    font-size: 20px;
+}
+.btn{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    cursor: pointer;
+ padding: 15px 30px;
+ border-radius: 50px;
+ border: none;
+}
+.btn button:nth-child(2){
+    background-color: black;
+    color: white;
+}
